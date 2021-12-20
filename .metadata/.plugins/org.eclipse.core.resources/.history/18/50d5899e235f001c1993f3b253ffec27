@@ -1,0 +1,19 @@
+package com.test.library;
+
+import org.openqa.selenium.WebDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BrowserFactory {
+	
+	static Webdriver driver;
+	
+	public static WebDriver StartBrowser(String browsername) {
+	
+		if(browserName.equals("chrome"))
+			{
+		WebDriverManager.chromedriver().setup();
+		 driver= new Chromedriver();
+	}
+
+}}
